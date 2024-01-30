@@ -1,7 +1,7 @@
 export const stack = ref<Stack[]>([
-  { id: 4, name: 'pinia', url: '/stack/pinia.png' },
+  { id: 4, name: 'pinia', url: '/stack/pinia.svg' },
   { id: 5, name: 'vuex', url: '/stack/vuex.png' },
-  { id: 6, name: 'firebase', url: '/stack/firebase.png' },
+  { id: 6, name: 'firebase', url: '/stack/firebase.svg' },
   { id: 7, name: 'appwrite', url: '/stack/appwrite.svg' },
   { id: 8, name: 'sass', url: '/stack/sass.svg' },
   { id: 9, name: 'tailwind', url: '/stack/tailwind.svg' },
