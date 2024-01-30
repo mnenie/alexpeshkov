@@ -28,15 +28,12 @@ const onLoad = (container: Container) => {
 </script>
 
 <template>
-  <NuxtParticles
-    id="tsparticles"
-    :options="options"
-    @load="onLoad"
-  >
+  <NuxtParticles id="tsparticles" :options="options" @load="onLoad">
   </NuxtParticles>
-  <div class="flex flex-col h-full w-full pt-40">
+  <div class="flex flex-col h-full w-full pt-40 relative">
     <AboutMainDescription v-motion-pop-visible />
-    <StackTechnologies v-motion :initial="{ opacity: 0, y: 100 }" :visible="{ opacity: 1, y: 0, scale: 1 }"
+    <StackTechnologies v-motion :initial="{ opacity: 0, x: 100 }" :visible="{ opacity: 1, x: 0, scale: 1 }"
       :delay="200" />
+    <ProjectsContent v-motion-slide-visible-left />
   </div>
 </template>

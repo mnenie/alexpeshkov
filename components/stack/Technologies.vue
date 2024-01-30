@@ -23,9 +23,9 @@ const items = ref([
 </script>
 
 <template>
-  <div class="flex flex-col container items-center">
-    <h1 class="text-5xl text-white mb-4">My Stack</h1>
-    <div class="flex space-x-2 items-center flex-wrap justify-center">
+  <div class="flex flex-col container items-center mb-40 relative">
+    <h2 class="text-5xl text-white mb-4">My Stack</h2>
+    <div class="flex space-x-1 items-center flex-wrap justify-center max-w-7xl">
       <NuxtImg class="w-20 h-20" src="/stack/nuxt.png" />
       <div class="flex space-x-4 items-center flex-wrap justify-center">
         <NuxtImg class="w-12 h-12" src="/stack/vue.svg" />
