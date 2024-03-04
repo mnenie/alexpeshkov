@@ -11,7 +11,7 @@ const {goToBlankPage} = useBlank()
 <template>
   <div class="flex justify-center space-x-4 items-center mt-8">
     <UIButton v-for="network in networks" :key="network.id" @click="goToBlankPage(network.url)" class="flex items-center" variant="outline">
-      <NuxtImg :src="network.img" class="w-6 h-6 mr-2" />
+      <img :src="network.img" class="w-6 h-6 mr-2" />
       <span class="text-base">{{ network.name }}</span>
     </UIButton >
   </div>
