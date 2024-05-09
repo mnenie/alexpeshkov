@@ -31,7 +31,7 @@ const onLoad = (container: Container) => {
   <NuxtParticles id="tsparticles" :options="options" @load="onLoad">
   </NuxtParticles>
   <div class="flex flex-col h-full w-full pt-40 relative">
-    <AboutMainDescription v-motion-pop-visible />
+    <AboutMainDescription />
     <StackTechnologies v-motion :initial="{ opacity: 0, x: 100 }" :visible="{ opacity: 1, x: 0, scale: 1 }" />
     <ProjectsContent v-motion-slide-visible-left />
   </div>
