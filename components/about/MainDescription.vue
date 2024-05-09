@@ -6,6 +6,7 @@ const arr = ref([
 </script>
 
 <template>
+  <ClientOnly>
   <div class="w-full container mb-40">
     <div class="flex justify-center flex-col-reverse items-center">
       <div class="flex flex-col items-center">
@@ -19,4 +20,5 @@ const arr = ref([
       <AboutProfile class="mb-8" />
     </div>
   </div>
+</ClientOnly>
 </template>
