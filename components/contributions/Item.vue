@@ -1,9 +1,9 @@
 <script setup lang="ts">
 const props = defineProps<{
-  contributions: Contribution[];
-}>();
+  contributions: Contribution[]
+}>()
 
-const { goToBlankPage } = useBlank();
+const { goToBlankPage } = useBlank()
 </script>
 
 <template>
@@ -19,13 +19,13 @@ const { goToBlankPage } = useBlank();
         <img
           class="rounded-lg lg:h-[210px] w-full block_proj"
           :src="item.img"
-        />
+        >
         <div
           v-if="item && item.site"
-          @click="goToBlankPage(item.site)"
           class="absolute right-4 top-4 rounded-full w-10 h-10 bg-gray-900 flex items-center justify-center cursor-pointer"
+          @click="goToBlankPage(item.site)"
         >
-          <img class="w-6 h-6 object-contain" src="/projects/site.svg" />
+          <img class="w-6 h-6 object-contain" src="/projects/site.svg">
         </div>
       </div>
     </div>

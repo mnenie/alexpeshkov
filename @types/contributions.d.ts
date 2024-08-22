@@ -1,5 +1,5 @@
 interface Contribution {
-  id: number;
-  img: string;
-  site: string;
+  id: number
+  img: string
+  site: string
 }

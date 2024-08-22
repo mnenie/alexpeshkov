@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import { links } from "../../data/links";
+import { links } from '../../data/links'
 
-const scrollToSection = (sectionId: string) => {
-  const section = document.getElementById(sectionId);
+function scrollToSection(sectionId: string) {
+  const section = document.getElementById(sectionId)
   if (section) {
-    const offset = section.offsetHeight / 2;
-    const top = section.getBoundingClientRect().top + window.scrollY - offset;
-    window.scrollTo({ top, behavior: "smooth" });
+    const offset = section.offsetHeight / 2
+    const top = section.getBoundingClientRect().top + window.scrollY - offset
+    window.scrollTo({ top, behavior: 'smooth' })
   }
-};
+}
 </script>
 
 <template>
@@ -23,8 +23,8 @@ const scrollToSection = (sectionId: string) => {
         <span
           v-for="link in links"
           :key="link.id"
-          @click="scrollToSection(link.section)"
           class="cursor-pointer text-base font-medium transition-colors text-zinc-200/80 hover:text-zinc-200"
+          @click="scrollToSection(link.section)"
         >
           {{ link.name }}
         </span>

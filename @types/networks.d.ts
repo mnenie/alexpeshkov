@@ -1,6 +1,6 @@
 interface Network {
-  id: number;
-  img: string;
-  name: string;
-  url: string;
+  id: number
+  img: string
+  name: string
+  url: string
 }

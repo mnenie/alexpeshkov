@@ -1,25 +1,15 @@
 {
   "name": "nuxt-app",
-  "private": true,
   "type": "module",
+  "private": true,
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "devDependencies": {
-    "@antfu/eslint-config": "^2.27.0",
-    "@nuxtjs/google-fonts": "^3.1.3",
-    "@nuxtjs/tailwindcss": "^6.11.1",
-    "eslint": "^9.9.0",
-    "nuxt": "^3.9.3",
-    "nuxt-particles": "^0.1.5",
-    "shadcn-nuxt": "^0.8.7",
-    "typescript": "^5.3.3",
-    "vue": "^3.4.14",
-    "vue-router": "^4.2.5"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "@nuxt/image": "^1.3.0",
@@ -32,5 +22,17 @@
     "tailwind-merge": "^2.2.1",
     "tailwindcss-animate": "^1.0.7",
     "vue-writer": "^1.2.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.27.0",
+    "@nuxtjs/google-fonts": "^3.1.3",
+    "@nuxtjs/tailwindcss": "^6.11.1",
+    "eslint": "^9.9.0",
+    "nuxt": "^3.9.3",
+    "nuxt-particles": "^0.1.5",
+    "shadcn-nuxt": "^0.8.7",
+    "typescript": "^5.3.3",
+    "vue": "^3.4.14",
+    "vue-router": "^4.2.5"
   }
 }

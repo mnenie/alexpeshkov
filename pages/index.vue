@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import type { Container } from "tsparticles-engine";
+import type { Container } from 'tsparticles-engine'
 
 useSeoMeta({
-  title: "Alex Peshkov | Portfolio",
-  ogTitle: "Alex Peshkov | Portfolio",
-  description: "My portfolio with my works and info.",
-  ogDescription: "My portfolio with my works and info.",
-});
+  title: 'Alex Peshkov | Portfolio',
+  ogTitle: 'Alex Peshkov | Portfolio',
+  description: 'My portfolio with my works and info.',
+  ogDescription: 'My portfolio with my works and info.',
+})
 
 const options = {
   fullScreen: {
@@ -15,10 +15,10 @@ const options = {
   },
   particles: {
     color: {
-      value: "#a1a1aa",
+      value: '#a1a1aa',
     },
     links: {
-      color: "#e4e4e7",
+      color: '#e4e4e7',
       enable: true,
     },
     move: {
@@ -28,11 +28,11 @@ const options = {
       value: 30,
     },
   },
-};
-const onLoad = async (container: Container) => {
-  container.pause();
-  setTimeout(() => container.play(), 0);
-};
+}
+async function onLoad(container: Container) {
+  container.pause()
+  setTimeout(() => container.play(), 0)
+}
 </script>
 
 <template>

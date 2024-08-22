@@ -1,10 +1,12 @@
 <script setup lang="ts">
-import { contributions } from "~/data/contributions";
+import { contributions } from '~/data/contributions'
 </script>
 
 <template>
   <div id="contributions" class="flex flex-col items-center justify-center container pb-20">
-    <h2 class="text-5xl text-white mb-6">Contributions</h2>
+    <h2 class="text-5xl text-white mb-6">
+      Contributions
+    </h2>
     <p class="text-2xl text-white mb-10 text-center max-w-5xl">
       This section is dedicated to my contributions to the community Vue.js and
       its ecosystem. Everything you can see has been officially released or
