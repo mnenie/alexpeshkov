@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-  devtools: { enabled: false },
+  devtools: { enabled: true },
   modules: [
     "@nuxtjs/tailwindcss",
     "shadcn-nuxt",

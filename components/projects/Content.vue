@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { projects } from "~/mocks/projects.mock";
+import { projects } from "~/data/projects";
 </script>
 
 <template>
-  <div class="flex flex-col items-center justify-center container pb-20">
-    <h2 class="text-5xl text-white mb-6">My Projects</h2>
+  <div class="flex flex-col items-center justify-center container pb-32">
+    <h2 id="projects" class="text-5xl text-white mb-6">My Projects</h2>
     <p class="text-2xl text-white mb-10 text-center max-w-5xl">
       Following projects showcases my skills and experience through real-world
       examples of my work. Each project is briefly described with links to code

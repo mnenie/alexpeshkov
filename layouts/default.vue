@@ -1,9 +1,7 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
-  <div class="w-full h-dvh">
+  <IconsBgSquare />
+  <div class="w-full h-full relative">
+    <LayoutHeader />
     <slot />
   </div>
 </template>

@@ -1,39 +1,46 @@
 <script setup lang="ts">
-import type { Container } from 'tsparticles-engine'
+import type { Container } from "tsparticles-engine";
+
+useSeoMeta({
+  title: "Alex Peshkov | Portfolio",
+  ogTitle: "Alex Peshkov | Portfolio",
+  description: "My portfolio with my works and info.",
+  ogDescription: "My portfolio with my works and info.",
+});
+
 const options = {
   fullScreen: {
     enable: true,
-    zIndex: -1
+    zIndex: -1,
   },
   particles: {
     color: {
-      value: "#fff"
+      value: "#a1a1aa",
     },
     links: {
-      color: "#fff",
-      enable: true
+      color: "#e4e4e7",
+      enable: true,
     },
     move: {
-      enable: true
+      enable: true,
     },
     number: {
-      value: 100
-    }
-  }
-}
-const onLoad = (container: Container) => {
-  container.pause()
-  setTimeout(() => container.play(), 0)
-}
+      value: 30,
+    },
+  },
+};
+const onLoad = async (container: Container) => {
+  container.pause();
+  setTimeout(() => container.play(), 0);
+};
 </script>
 
 <template>
-  <NuxtParticles id="tsparticles" :options="options" @load="onLoad">
-  </NuxtParticles>
   <div class="flex flex-col h-full w-full pt-40 relative">
     <AboutMainDescription />
-    <StackTechnologies v-motion :initial="{ opacity: 0, x: 100 }" :visible="{ opacity: 1, x: 0, scale: 1 }" />
-    <ProjectsContent v-motion-slide-visible-left />
-    <ContributionsWorks v-motion-slide-visible-bottom />
+    <StackTechnologies />
+    <ProjectsContent />
+    <ContributionsWorks />
   </div>
+  <NuxtParticles id="tsparticles" :options="options" @load="onLoad" />
 </template>

@@ -1,4 +1,4 @@
-export const contributions = shallowRef<Contribution[]>([
+export const contributions: Contribution[] = [
   {
     id: 1,
     img: "/contributions/una-ui.png",
@@ -14,4 +14,4 @@ export const contributions = shallowRef<Contribution[]>([
     img: "/contributions/nuxt.png",
     site: "https://nuxt.com/",
   },
-]);
+]

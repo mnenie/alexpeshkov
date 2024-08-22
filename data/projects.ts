@@ -1,4 +1,4 @@
-export const projects = shallowRef<Project[]>([
+export const projects: Project[] = [
   {
     id: 1, img: '/projects/notium.png', title: 'Notium is a cloud app for creating and storing notes, also using the built-in AI assistant',
     stack: '#nuxt3, #typescript, #pinia, #tailwind, #shadcn, #vitest, #yandex-gpt', product: 'https://notium.vercel.app/', github: 'https://github.com/mnenie/notium'
@@ -39,4 +39,4 @@ export const projects = shallowRef<Project[]>([
     id: 10, img: '/projects/teachers.png', title: 'The Teachers Portal is a multi-page website written in the Vue framework for finding tutors and students (freelance)',
     stack: '#vue3, #javascript, #vuex, #css', product: 'https://mnenie.github.io/TeachersPortal/', github: 'https://github.com/mnenie/TeachersPortal'
   },
-])
+]

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const stack = shallowRef<Stack[]>([
+const stack: Stack[] = [
   { id: 4, name: "pinia", url: "/stack/pinia.svg", class: "w-14 h-14" },
   { id: 5, name: "vuex", url: "/stack/vuex.png", class: "w-14 h-14" },
   {
@@ -58,11 +58,11 @@ const stack = shallowRef<Stack[]>([
     url: "/stack/eslint.png",
     class: "w-[44px] h-[42px]",
   },
-]);
+];
 </script>
 
 <template>
-  <div class="flex flex-col container items-center mb-40 relative">
+  <div id="stack" class="flex flex-col container items-center mb-44 w-full">
     <h2 class="text-5xl text-white mb-4">My Stack</h2>
     <div class="flex space-x-1 items-center flex-wrap justify-center max-w-7xl">
       <img class="w-20 h-20" src="/stack/nuxt.svg" />
