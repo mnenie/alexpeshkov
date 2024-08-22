@@ -3,7 +3,7 @@ import { useWindowSize } from '@vueuse/core'
 // @ts-expect-error none types in vue-writer
 import VueWriter from 'vue-writer'
 
-const arr = ref([
+const arr = shallowRef([
   'I\'m a frontend developer',
   'I like programming',
   'I enjoy to work with Vue & Nuxt',

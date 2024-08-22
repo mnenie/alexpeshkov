@@ -1,9 +1,9 @@
 <script setup lang="ts">
-const props = defineProps<{
+defineProps<{
   projects: Project[]
 }>()
 
-const { goToBlankPage } = useBlank()
+const { goToBlankPage } = useNavigation()
 </script>
 
 <template>

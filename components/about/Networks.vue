@@ -5,7 +5,7 @@ const networks = ref<Network[]>([
   { id: 3, name: 'VK', img: '/networks/vk.png', url: 'https://vk.com/mnenie_mozhno' },
 ])
 
-const { goToBlankPage } = useBlank()
+const { goToBlankPage } = useNavigation()
 </script>
 
 <template>

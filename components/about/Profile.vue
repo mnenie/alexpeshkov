@@ -1,7 +1,3 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
   <div class="realtive">
     <div class="w-72 h-72 overflow-hidden bg-white rounded-full wrapper_profile">
