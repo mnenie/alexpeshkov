@@ -3,7 +3,7 @@ import { stack } from '~/data/stack'
 </script>
 
 <template>
-  <div id="stack" class="flex flex-col container items-center mb-44 w-full">
+  <div id="stack" class="flex flex-col container items-center mb-32 sm:mb-44 w-full">
     <h2 class="text-5xl text-white mb-4">
       {{ $t('stack') }}
     </h2>

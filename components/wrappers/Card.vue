@@ -51,4 +51,19 @@ const { goToBlankPage } = useNavigation()
     height: 315px;
   }
 }
+@media screen and (max-width: 560px) {
+  .card {
+    height: 283px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .card {
+    height: 252px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .card {
+    height: 238px;
+  }
+}
 </style>

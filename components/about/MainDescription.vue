@@ -24,14 +24,14 @@ watch(
 </script>
 
 <template>
-  <div id="about" class="w-full container mb-44 relative">
+  <div id="about" class="w-full container mb-[150px] sm:mb-44 relative">
     <div class="flex justify-center flex-col-reverse items-center">
       <div class="flex flex-col items-center">
         <h1 class="text-7xl text-white mb-4 text-center">
           {{ $t('about.hello') }}
         </h1>
-        <VueWriter class="text-2xl text-[rgb(0,220,130)] mb-2" :array="messages" />
-        <span class="text-lg text-white text-center w-2/3">
+        <VueWriter class="text-2xl text-center text-[rgb(0,220,130)] mb-2" :array="messages" />
+        <span class="text-lg text-white text-center w-full sm:w-2/3">
           {{ t('about.description') }}
           <a
             class="hover:underline hover:underline-offset-4"

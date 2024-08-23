@@ -65,4 +65,19 @@ const { goToBlankPage } = useNavigation()
     height: 315px;
   }
 }
+@media screen and (max-width: 560px) {
+  .block_proj {
+    height: 273px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .block_proj {
+    height: 248px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .block_proj {
+    height: 236px;
+  }
+}
 </style>
