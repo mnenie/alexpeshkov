@@ -33,10 +33,10 @@ const { width } = useWindowSize()
       </div>
       <AboutProfile class="mb-8" />
     </div>
-    <div v-show="width >= 1300">
-      <img v-if="locale === 'en'" class="absolute w-52 top-36 left-32" src="/about/me.png">
-      <img v-else class="absolute w-52 top-36 left-32" src="/about/me-ru.png">
-      <img class="absolute w-72 top-40 left-56" src="/about/arrow.png">
+    <div v-if="width >= 1300">
+      <NuxtImg v-if="locale === 'en'" class="absolute w-52 top-36 left-32" src="/about/me.png" loading="lazy" />
+      <NuxtImg v-else class="absolute w-52 top-36 left-32" src="/about/me-ru.png" loading="lazy" />
+      <NuxtImg class="absolute w-72 top-40 left-56" src="/about/arrow.png" loading="lazy" />
     </div>
   </div>
 </template>
