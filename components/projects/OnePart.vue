@@ -35,14 +35,14 @@ const { goToBlankPage } = useNavigation()
         </div>
       </div>
     </div>
-    <div class="flex flex-col relative">
+    <div class="flex flex-col justify-between h-fit relative">
       <div class="flex justify-between items-center">
-        <p class="text-white text-xl mb-2">
+        <p class="text-white text-xl mb-[62px]">
           {{ project.title }}
         </p>
       </div>
-      <span class="mb-2 text-white text-lg">{{ project.stack }}</span>
     </div>
+    <span class="mb-2 text-white text-lg absolute bottom-2 pr-5">{{ project.stack }}</span>
   </div>
 </template>
 

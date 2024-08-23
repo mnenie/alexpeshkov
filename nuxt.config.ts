@@ -1,13 +1,20 @@
+import i18nConfig from './i18n.config'
+
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
   modules: [
     '@nuxtjs/tailwindcss',
     'shadcn-nuxt',
-    ['@nuxtjs/google-fonts', { families: { 'Lilita One': true } }],
     '@nuxt/image',
     'nuxt-particles',
+    '@nuxtjs/i18n',
+    '@nuxt/fonts',
   ],
+
+  i18n: {
+    ...i18nConfig,
+  },
 
   particles: {
     mode: 'full',
@@ -18,4 +25,6 @@ export default defineNuxtConfig({
     prefix: 'UI',
     componentDir: './components/ui',
   },
+
+  compatibilityDate: '2024-08-22',
 })

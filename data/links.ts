@@ -3,4 +3,4 @@ export const links = [
   { id: 1, name: 'Stack', section: 'stack' },
   { id: 2, name: 'Contributions', section: 'contributions' },
   { id: 3, name: 'Projects', section: 'projects' },
-]
+] as Link[]

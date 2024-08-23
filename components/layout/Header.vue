@@ -1,6 +1,16 @@
 <script setup lang="ts">
 import { links } from '../../data/links'
 
+const { tm, t, rt } = useI18n()
+
+const localeLinks = computed(() => {
+  const localeArr = tm('header.links') as string[]
+  return links.map((link, index) => ({
+    ...link,
+    name: rt(localeArr[index]),
+  }))
+})
+
 const { scrollToBlock } = useNavigation()
 </script>
 
@@ -11,10 +21,14 @@ const { scrollToBlock } = useNavigation()
     <div
       class="container flex h-14 max-w-screen-2xl items-center justify-between"
     >
-      <span class="text-[20px] font-bold text-zinc-100">Alex Peshkov </span>
+      <div class="flex items-center">
+        <span class="text-[20px] font-bold text-zinc-100">{{ t('header.name') }}</span>
+        <div class="h-4 w-px bg-zinc-600 ml-4 mr-4" />
+        <I18nLanguageSwitcher />
+      </div>
       <div class="flex items-center space-x-10">
         <span
-          v-for="link in links"
+          v-for="link in localeLinks"
           :key="link.id"
           class="cursor-pointer text-base font-medium transition-colors text-zinc-200/80 hover:text-zinc-200"
           @click="scrollToBlock(link.section)"

@@ -5,12 +5,10 @@ import { contributions } from '~/data/contributions'
 <template>
   <div id="contributions" class="flex flex-col items-center justify-center container pb-20">
     <h2 class="text-5xl text-white mb-6">
-      Contributions
+      {{ $t('сontributions.title') }}
     </h2>
     <p class="text-2xl text-white mb-10 text-center max-w-5xl">
-      This section is dedicated to my contributions to the community Vue.js and
-      its ecosystem. Everything you can see has been officially released or
-      in dev mode. It is used by many people all over the world!
+      {{ $t('сontributions.description') }}
     </p>
     <div
       class="grid md:grid-cols-2 lg:grid-cols-3 w-full h-full xl:gap-20 lg:gap-2"

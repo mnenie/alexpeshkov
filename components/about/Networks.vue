@@ -1,9 +1,9 @@
 <script setup lang="ts">
-const networks = ref<Network[]>([
+const networks = [
   { id: 1, name: 'GitHub', img: '/networks/github.svg', url: 'https://github.com/mnenie' },
   { id: 2, name: 'Telegram', img: '/networks/telegram.png', url: 'https://t.me/youngjuicycashrussia' },
   { id: 3, name: 'VK', img: '/networks/vk.png', url: 'https://vk.com/mnenie_mozhno' },
-])
+] satisfies Network[]
 
 const { goToBlankPage } = useNavigation()
 </script>

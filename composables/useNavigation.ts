@@ -1,10 +1,5 @@
-export function useNavigation() {
-  // TODO
-  const goToBlankPage = (url: string) => {
-    const target: string = url
-    window.open(target, '_blank')
-  }
-
+export default function useNavigation() {
+  // TODO: nextTick
   const scrollToBlock = async (id: string) => {
     await nextTick()
     const block = document.getElementById(id)
@@ -14,6 +9,11 @@ export function useNavigation() {
       window.scrollTo({ top, behavior: 'smooth' })
     }
   }
+
+  const goToBlankPage = (url: string) => {
+    window.open(url, '_blank')
+  }
+
   return {
     goToBlankPage,
     scrollToBlock,
