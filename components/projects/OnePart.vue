@@ -1,6 +1,6 @@
 <script setup lang="ts">
 defineProps<{
-  projects: Project[]
+  project: Project
 }>()
 
 const { goToBlankPage } = useNavigation()
@@ -8,8 +8,6 @@ const { goToBlankPage } = useNavigation()
 
 <template>
   <div
-    v-for="project in projects"
-    :key="project.id"
     class="relative rounded-lg p-5 shadow-[0_20px_40px_20px_rgb(0,220,130,0.2)]"
   >
     <div class="relative mb-6">

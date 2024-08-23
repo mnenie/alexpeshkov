@@ -1,12 +1,12 @@
 <script setup lang="ts">
 defineProps<{
-  contributions: Contribution[]
+  talks: Talk[]
 }>()
 </script>
 
 <template>
   <WrappersCard
-    v-for="item in contributions"
+    v-for="item in talks"
     :key="item.id"
     :item
   />

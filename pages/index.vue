@@ -41,6 +41,7 @@ async function onLoad(container: Container) {
     <StackTechnologies />
     <ProjectsContent />
     <ContributionsWorks />
+    <TalksSection />
   </div>
   <NuxtParticles id="tsparticles" :options="options" @load="onLoad" />
 </template>

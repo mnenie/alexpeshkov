@@ -1,7 +1,7 @@
 export default {
   header: {
     name: 'Alex Peshkov',
-    links: ['About', 'Stack', 'Contributions', 'Projects'],
+    links: ['About', 'Stack', 'Contributions', 'Projects', 'Talks'],
   },
   about: {
     hello: 'Hey, I\'m Alex',
@@ -32,5 +32,9 @@ export default {
   сontributions: {
     title: 'Contributions',
     description: 'This section is dedicated to my contributions to the community Vue.js and its ecosystem. Everything you can see has been officially released or in dev mode. It is used by many people all over the world!',
+  },
+  talks: {
+    title: 'Talks',
+    description: 'This section is about my talks in conferences as a speaker.',
   },
 }

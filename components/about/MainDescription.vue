@@ -17,7 +17,7 @@ const { width } = useWindowSize()
   <div id="about" class="w-full container mb-44 relative">
     <div class="flex justify-center flex-col-reverse items-center">
       <div class="flex flex-col items-center">
-        <h1 class="text-7xl text-white mb-4">
+        <h1 class="text-7xl text-white mb-4 text-center">
           {{ $t('about.hello') }}
         </h1>
         <VueWriter class="text-2xl text-[rgb(0,220,130)] mb-2" :array="messages" />
