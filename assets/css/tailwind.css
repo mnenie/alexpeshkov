@@ -6,7 +6,7 @@
   body{
     font-family: 'Lilita One', sans-serif;
     background: rgb(17 24 39);
-    min-width: 664px;
+    min-width: 650px;
     overflow-x: hidden;
   }
   @media screen and (max-width: 460px) {

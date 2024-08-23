@@ -14,11 +14,13 @@ const { width } = useWindowSize()
 
 const showArrows = ref(false)
 
-onMounted(() => {
-  setTimeout(() => {
-    showArrows.value = width.value >= 1300
-  }, 1000)
-})
+watch(
+  () => width.value,
+  (newWidth) => {
+    showArrows.value = newWidth >= 1300
+  },
+  { flush: 'sync', immediate: true },
+)
 </script>
 
 <template>
