@@ -1,7 +1,14 @@
 <script setup lang="ts">
+import { breakpointsTailwind, useBreakpoints } from '@vueuse/core'
 import { links } from '../../data/links'
 
+const breakpoints = useBreakpoints({
+  ...breakpointsTailwind,
+  sm: 760,
+})
+
 const { tm, t, rt } = useI18n()
+const { scrollToBlock } = useNavigation()
 
 const localeLinks = computed(() => {
   const localeArr = tm('header.links') as string[]
@@ -11,7 +18,12 @@ const localeLinks = computed(() => {
   }))
 })
 
-const { scrollToBlock } = useNavigation()
+const name = computed(() => {
+  const isSmaller = breakpoints.smaller('sm')
+  return isSmaller.value
+    ? t('header.name').split(' ').map(w => w[0]).join('')
+    : t('header.name')
+})
 </script>
 
 <template>
@@ -22,7 +34,7 @@ const { scrollToBlock } = useNavigation()
       class="md:container pl-4 pr-4 flex h-14 max-w-screen-2xl items-center justify-between"
     >
       <div class="flex items-center">
-        <span class="text-[20px] font-bold text-zinc-100">{{ t('header.name') }}</span>
+        <span class="text-[20px] font-bold text-zinc-100">{{ name }}</span>
         <div class="h-4 w-px bg-zinc-600 ml-4 mr-4" />
         <I18nLanguageSwitcher />
       </div>
