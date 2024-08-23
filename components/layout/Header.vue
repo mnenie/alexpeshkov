@@ -7,7 +7,7 @@ const breakpoints = useBreakpoints({
   sm: 760,
 })
 
-const { tm, t, rt } = useI18n()
+const { tm, t, rt, locale } = useI18n()
 const { scrollToBlock } = useNavigation()
 
 const localeLinks = computed(() => {
@@ -35,10 +35,13 @@ const name = computed(() => {
     >
       <div class="flex items-center">
         <span class="text-[20px] font-bold text-zinc-100">{{ name }}</span>
-        <div class="h-4 w-px bg-zinc-600 ml-3 mr-3 sm:ml-4 sm:mr-4" />
+        <div class="h-4 w-px bg-zinc-600 ml-3 mr-2 sm:ml-4 sm:mr-4" />
         <I18nLanguageSwitcher />
       </div>
-      <div class="flex items-center space-x-3 md:space-x-6 lg:space-x-10">
+      <div
+        class="flex items-center space-x-3 md:space-x-6 lg:space-x-10"
+        :class="{ 'space-x-2': locale === 'ru' }"
+      >
         <span
           v-for="link in localeLinks"
           :key="link.id"
