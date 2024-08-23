@@ -6,10 +6,10 @@
   body{
     font-family: 'Lilita One', sans-serif;
     background: rgb(17 24 39);
-    min-width: 668px;
+    min-width: 664px;
     overflow-x: hidden;
   }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 460px) {
     body {
       zoom: 0.56;
     }

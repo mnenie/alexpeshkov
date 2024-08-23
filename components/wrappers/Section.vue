@@ -13,7 +13,7 @@ defineProps<{
       <slot name="description" />
     </p>
     <div
-      class="grid md:grid-cols-2 lg:grid-cols-3 w-full h-full xl:gap-20 lg:gap-2"
+      class="grid md:grid-cols-2 lg:grid-cols-3 w-full h-full xl:gap-20 gap-2"
     >
       <slot />
     </div>
