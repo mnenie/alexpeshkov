@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { useWindowSize } from '@vueuse/core'
 // @ts-expect-error none types in vue-writer
 import VueWriter from 'vue-writer'
 
@@ -9,18 +8,6 @@ const messages = computed(() => {
   const locales = tm('about.messages') as string[]
   return locales.map(rt)
 })
-
-const { width } = useWindowSize()
-
-const showArrows = ref(false)
-
-watch(
-  () => width.value,
-  (newWidth) => {
-    showArrows.value = newWidth >= 1300
-  },
-  { flush: 'sync', immediate: true },
-)
 </script>
 
 <template>
@@ -43,10 +30,19 @@ watch(
       </div>
       <AboutProfile class="mb-8" />
     </div>
-    <div v-if="width >= 1300">
-      <NuxtImg v-if="locale === 'en'" class="absolute w-52 top-36 left-32" src="/about/me.png" loading="lazy" />
-      <NuxtImg v-else class="absolute w-52 top-36 left-32" src="/about/me-ru.png" loading="lazy" />
-      <NuxtImg class="absolute w-72 top-40 left-56" src="/about/arrow.png" loading="lazy" />
+    <div class="imgs">
+      <NuxtImg v-if="locale === 'en'" class="absolute w-52 top-36 left-32" src="/about/me.png" />
+      <NuxtImg v-else class="absolute w-52 top-36 left-32" src="/about/me-ru.png" />
+      <NuxtImg class="absolute w-72 top-40 left-56" src="/about/arrow.png" />
     </div>
   </div>
 </template>
+
+<style scoped>
+/* TODO: with sync watcher */
+@media screen and (max-width: 1300px) {
+  .imgs{
+    display: none
+  }
+}
+</style>

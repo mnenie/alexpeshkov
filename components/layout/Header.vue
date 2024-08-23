@@ -31,7 +31,7 @@ const name = computed(() => {
     class="fixed w-full select-none bg-[#111827]/75 backdrop-blur -mb-px top-0 z-50 lg:mb-0 border-0"
   >
     <div
-      class="md:container pl-4 pr-4 flex h-14 max-w-screen-2xl items-center justify-between"
+      class="md:container pl-3 pr-3 flex h-14 max-w-screen-2xl items-center justify-between"
     >
       <div class="flex items-center">
         <span class="text-[20px] font-bold text-zinc-100">{{ name }}</span>
