@@ -25,4 +25,6 @@ export default defineNuxtConfig({
     prefix: 'UI',
     componentDir: './components/ui',
   },
+
+  compatibilityDate: '2024-08-30',
 })

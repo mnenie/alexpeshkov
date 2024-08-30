@@ -10,7 +10,7 @@ const { goToBlankPage } = useNavigation()
   <div
     class="relative rounded-lg p-5 shadow-[0_20px_40px_20px_rgb(0,220,130,0.2)]"
   >
-    <div class="relative mb-6">
+    <div class="relative 2xl:mb-4 mb-6">
       <div
         class="w-full rounded-lg relative lg:h-[210px] block_proj overflow-hidden"
       >
@@ -40,7 +40,7 @@ const { goToBlankPage } = useNavigation()
         </p>
       </div>
     </div>
-    <span class="mb-2 text-white text-lg absolute bottom-2 pr-5">{{ project.stack }}</span>
+    <span class="mb-2 text-white xl:text-base text-lg absolute bottom-2 pr-5">{{ project.stack }}</span>
   </div>
 </template>
 
