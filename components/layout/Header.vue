@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { breakpointsTailwind, useBreakpoints } from '@vueuse/core'
 import { links } from '../../data/links'
+import { cn } from '~/lib/utils'
 
 const breakpoints = useBreakpoints({
   ...breakpointsTailwind,
@@ -8,7 +9,7 @@ const breakpoints = useBreakpoints({
 })
 
 const { tm, t, rt } = useI18n()
-const { scrollToBlock } = useNavigation()
+const { activeBlock: active, scrollToBlock } = useNavigation()
 
 const localeLinks = computed(() => {
   const localeArr = tm('header.links') as string[]
@@ -38,18 +39,23 @@ const name = computed(() => {
         <div class="h-4 w-px bg-zinc-600 ml-3 mr-2 sm:ml-4 sm:mr-4" />
         <I18nLanguageSwitcher />
       </div>
-      <div
-        class="flex items-center space-x-3 md:space-x-6 lg:space-x-10"
-      >
-        <span
-          v-for="link in localeLinks"
-          :key="link.id"
-          class="cursor-pointer text-base font-medium transition-colors text-zinc-200/80 hover:text-zinc-200"
-          @click="scrollToBlock(link.section)"
+      <ClientOnly>
+        <div
+          class="flex items-center space-x-3 md:space-x-6 lg:space-x-10"
         >
-          {{ link.name }}
-        </span>
-      </div>
+          <span
+            v-for="link in localeLinks"
+            :key="link.id"
+            :class="cn(
+              [active === link.section ? 'text-zinc-200' : 'text-zinc-200/80'],
+              'cursor-pointer text-base font-medium transition-colors hover:text-zinc-200',
+            )"
+            @click="scrollToBlock(link.section)"
+          >
+            {{ link.name }}
+          </span>
+        </div>
+      </ClientOnly>
     </div>
   </header>
 </template>

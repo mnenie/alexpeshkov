@@ -1,11 +1,13 @@
-import { useWindowSize } from '@vueuse/core'
+import { useLocalStorage, useWindowSize } from '@vueuse/core'
+import { computed, nextTick } from 'vue'
 
 export default function useNavigation() {
+  const activeBlock = useLocalStorage<string | null>('about', null)
   const { width } = useWindowSize()
 
   const offset = computed(() => {
     return (block: HTMLElement) => {
-      return width.value >= 480 ? block.offsetHeight / 2 : 0
+      return width.value >= 480 ? block.offsetHeight : 0
     }
   })
 
@@ -13,29 +15,23 @@ export default function useNavigation() {
     await nextTick()
     const block = document.getElementById(id)
     if (block) {
-      const currentY = window.scrollY
-      const blockTop = block.getBoundingClientRect().top + window.scrollY
-
-      const isBelowBlock = currentY > blockTop
-
-      let zoom: number = 1
+      let adjustment = 1
       if (width.value <= 480) {
-        if (isBelowBlock) {
-          zoom = 0.79
-        }
-        else {
-          zoom = id === 'contributions' ? 0.75 : 0.7
-        }
+        // TODO
+        adjustment = id === 'contributions' ? 0.98 : id === 'talks' ? 1 : 0.9
       }
-      const top = (block.getBoundingClientRect().top * zoom + window.scrollY) - offset.value(block)
+      activeBlock.value = id
+      const top = block.getBoundingClientRect().top + window.scrollY * adjustment - offset.value(block)
       window.scrollTo({ top, behavior: 'smooth' })
     }
   }
+
   const goToBlankPage = (url: string) => {
     window.open(url, '_blank')
   }
 
   return {
+    activeBlock,
     goToBlankPage,
     scrollToBlock,
   }
