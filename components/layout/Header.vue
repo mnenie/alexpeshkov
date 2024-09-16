@@ -9,7 +9,7 @@ const breakpoints = useBreakpoints({
 })
 
 const { tm, t, rt } = useI18n()
-const { activeBlock: active, scrollToBlock } = useNavigation()
+const { scrollToBlock } = useNavigation()
 
 const localeLinks = computed(() => {
   const localeArr = tm('header.links') as string[]
@@ -47,8 +47,7 @@ const name = computed(() => {
             v-for="link in localeLinks"
             :key="link.id"
             :class="cn(
-              [active === link.section ? 'text-zinc-200' : 'text-zinc-200/80'],
-              'cursor-pointer text-base font-medium transition-colors hover:text-zinc-200',
+              'cursor-pointer text-base font-medium transition-colors text-zinc-200/80 hover:text-zinc-200',
             )"
             @click="scrollToBlock(link.section)"
           >

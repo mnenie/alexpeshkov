@@ -3,7 +3,7 @@ interface Talk extends CardWithoutDescription {}
 
 interface Link {
   id: number
-  section: string
+  section: 'about' | 'stack' | 'contributions' | 'projects' | 'talks'
   name: string
 }
 
