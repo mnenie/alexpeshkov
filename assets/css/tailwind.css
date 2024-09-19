@@ -16,19 +16,20 @@
   }
 }
 
-::-webkit-scrollbar {
+.win-scrollbar ::-webkit-scrollbar {
   width: 10px;
-}
-
-::-webkit-scrollbar-track {
   background-color: transparent;
 }
 
-::-webkit-scrollbar-thumb {
+.win-scrollbar ::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.win-scrollbar ::-webkit-scrollbar-thumb {
   border-radius: .6em;
   background-color: rgb(51 65 85);
 }
 
-::-webkit-scrollbar-thumb:hover {
+.win-scrollbar ::-webkit-scrollbar-thumb:hover {
   background-color: rgb(71 85 105);
 }
