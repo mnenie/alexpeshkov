@@ -17,7 +17,7 @@ export default defineNuxtConfig({
   },
 
   plugins: [
-    '~/plugins/scrollbar.ts',
+    '~/plugins/scrollbar.client.ts',
   ],
 
   particles: {
