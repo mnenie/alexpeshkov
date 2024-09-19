@@ -1,0 +1,19 @@
+@supports (not (font: -apple-system)) {
+  ::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: rgb(30 41 59);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: .6em;
+    background-color: rgb(51 65 85);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(71 85 105);
+  }
+}
