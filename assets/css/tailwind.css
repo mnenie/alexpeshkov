@@ -21,7 +21,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background-color: rgb(30 41 59);
+  background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
