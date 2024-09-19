@@ -1,2 +1,19 @@
 @import './tailwind.css';
 @import './scrollbar.css';
+
+html {
+  color-scheme: dark;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+body{
+  font-family: 'Lilita One', sans-serif;
+  background: rgb(17 24 39);
+  min-width: 480px;
+}
+@media screen and (max-width: 460px) {
+  body {
+    zoom: 0.76;
+  }
+}
