@@ -12,13 +12,11 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
   ],
 
+  css: ['~/assets/css/main.css'],
+
   i18n: {
     ...i18nConfig,
   },
-
-  plugins: [
-    '~/plugins/scrollbar.client.ts',
-  ],
 
   particles: {
     mode: 'full',
