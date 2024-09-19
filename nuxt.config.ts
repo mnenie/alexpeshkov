@@ -16,6 +16,10 @@ export default defineNuxtConfig({
     ...i18nConfig,
   },
 
+  plugins: [
+    '~/plugins/scrollbar.ts',
+  ],
+
   particles: {
     mode: 'full',
     lazy: true,
