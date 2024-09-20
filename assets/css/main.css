@@ -2,7 +2,6 @@
 @import './scrollbar.css';
 
 html {
-  color-scheme: dark;
   overflow-x: hidden;
   overflow-y: scroll;
 }
