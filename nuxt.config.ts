@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     'nuxt-particles',
     '@nuxtjs/i18n',
     '@nuxt/fonts',
+    '@nuxthub/core',
   ],
 
   css: ['~/assets/css/main.css'],

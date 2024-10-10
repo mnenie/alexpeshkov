@@ -27,6 +27,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^2.27.0",
     "@nuxt/fonts": "^0.7.2",
+    "@nuxthub/core": "^0.7.26",
     "@nuxtjs/google-fonts": "^3.1.3",
     "@nuxtjs/i18n": "^8.5.0",
     "@nuxtjs/tailwindcss": "^6.12.1",
@@ -38,7 +39,8 @@
     "shadcn-nuxt": "^0.10.4",
     "typescript": "^5.3.3",
     "vue": "^3.4.14",
-    "vue-router": "^4.2.5"
+    "vue-router": "^4.2.5",
+    "wrangler": "^3.80.2"
   },
   "lint-staged": {
     "*.ts": [
