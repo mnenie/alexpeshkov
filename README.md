@@ -1,4 +1,4 @@
-**[alexpeshkov](https://alexpeshkov.vercel.app/)**
+**[alexpeshkov](https://alexpeshkov.nuxt.dev/)**
 
 my personal website
 
