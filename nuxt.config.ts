@@ -19,6 +19,12 @@ export default defineNuxtConfig({
     '@nuxthub/core',
   ],
 
+  hub: {
+    kv: true,
+    database: true,
+    cache: true,
+  },
+
   css: ['~/assets/css/main.css'],
 
   i18n: {
