@@ -26,7 +26,11 @@ const classes = twMerge(
 
 <template>
   <component :is="url ? 'a' : 'div'" :href="url" target="_blank" :class="classes">
-    <img :src="icon" :alt="technology" :class="[url ? 'w-4 h-4' : 'w-6 h-6']">
+    <img
+      :src="icon"
+      :alt="technology"
+      :class="[url ? 'w-4 h-4' : 'w-6 h-6']"
+    >
     {{ technology }}
   </component>
 </template>
