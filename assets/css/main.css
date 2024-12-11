@@ -10,6 +10,8 @@ body{
   font-family: 'Lilita One', sans-serif;
   background: rgb(17 24 39);
   min-width: 480px;
+  height: 100dvh;
+  width: 100%;
 }
 @media screen and (max-width: 460px) {
   body {

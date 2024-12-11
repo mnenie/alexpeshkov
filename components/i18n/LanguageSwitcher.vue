@@ -5,7 +5,7 @@ const { changeLocale, activeLocale, availableLocales } = useLanguage()
 </script>
 
 <template>
-  <UIDropdownMenu>
+  <UIDropdownMenu :modal="false">
     <UIDropdownMenuTrigger>
       <div
         class="flex items-center gap-1.5 cursor-pointer text-zinc-200/80 hover:text-zinc-200 transition-colors"

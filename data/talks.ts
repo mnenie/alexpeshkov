@@ -1,7 +1,12 @@
+import type { Talk } from '~/types'
+
 export const talks: Talk[] = [
   {
-    id: 1,
-    img: '/talks/mirea-may.png',
-    site: 'https://github.com/mnenie/speech-conference-2024',
+    img: '/talks/may2024.png',
+    site: 'https://github.com/mnenie/talks',
+  },
+  {
+    img: '/talks/december2024.png',
+    site: 'https://github.com/mnenie/talks',
   },
 ]

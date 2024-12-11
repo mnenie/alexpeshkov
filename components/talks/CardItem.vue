@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { Talk } from '~/types'
+
 defineProps<{
   talks: Talk[]
 }>()
@@ -6,8 +8,8 @@ defineProps<{
 
 <template>
   <WrappersCard
-    v-for="item in talks"
-    :key="item.id"
+    v-for="item, idx in talks"
+    :key="idx"
     :item
   />
 </template>

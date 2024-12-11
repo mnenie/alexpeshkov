@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { Contribution } from '~/types'
+
 defineProps<{
   contributions: Contribution[]
 }>()
@@ -6,8 +8,8 @@ defineProps<{
 
 <template>
   <WrappersCard
-    v-for="item in contributions"
-    :key="item.id"
+    v-for="item, idx in contributions"
+    :key="idx"
     :item
   />
 </template>

@@ -23,8 +23,8 @@ const localeProjects = computed(() => {
       {{ t('projects.description') }}
     </template>
     <ProjectsOnePart
-      v-for="project in localeProjects"
-      :key="project.id"
+      v-for="project, idx in localeProjects"
+      :key="idx"
       :project
     />
   </WrappersSection>

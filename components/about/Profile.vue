@@ -1,7 +1,7 @@
 <template>
   <div class="realtive">
     <div class="w-72 h-72 overflow-hidden bg-white rounded-full wrapper_profile">
-      <img class="w-96 h-96 object-cover" src="/models/me.png">
+      <NuxtImg class="w-96 h-96 object-cover" src="/models/me.png" />
     </div>
   </div>
 </template>

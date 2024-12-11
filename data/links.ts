@@ -1,3 +1,5 @@
+import type { Link } from '~/types'
+
 export const links = [
   { id: 0, name: 'About', section: 'about' },
   { id: 1, name: 'Stack', section: 'stack' },

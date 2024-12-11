@@ -3,6 +3,12 @@ import i18nConfig from './i18n.config'
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
+  nitro: {
+    prerender: {
+      routes: ['/'],
+    },
+  },
+
   modules: [
     '@nuxtjs/tailwindcss',
     'shadcn-nuxt',

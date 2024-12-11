@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { CardWithoutDescription } from '~/types'
+
 defineProps<{
   item: CardWithoutDescription
 }>()
