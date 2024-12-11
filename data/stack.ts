@@ -26,7 +26,7 @@ export const stack: Stack[] = [
   { icon: '/stack/api.png', technology: 'Rest/GraphQL' },
   { icon: '/stack/cicd.png', technology: 'CI/CD' },
   { icon: '/stack/husky.png', technology: 'Husky' },
-  { icon: '/stack/eslint.png', technology: 'Eslint' },
+  { icon: '/stack/eslintflat.png', technology: 'Eslint' },
   { icon: '/stack/stylelint.png', technology: 'Stylelint' },
-  { icon: '/stack/prettier.png', technology: 'Prettier' },
+  { icon: '/stack/prettiernew.png', technology: 'Prettier' },
 ]
