@@ -10,6 +10,10 @@ export const contributions: Contribution[] = [
     site: 'https://vueuse.org/',
   },
   {
+    img: '/contributions/vuei18n.png',
+    site: 'https://vue-i18n.intlify.dev/',
+  },
+  {
     img: '/contributions/vue.png',
     site: 'https://ru.vuejs.org/',
   },
