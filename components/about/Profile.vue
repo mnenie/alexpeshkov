@@ -1,7 +1,7 @@
 <template>
   <div class="realtive">
     <div class="w-72 h-72 overflow-hidden bg-white rounded-full wrapper_profile">
-      <NuxtImg class="w-96 h-96 object-cover" src="/models/me.png" />
+      <NuxtImg class="w-80 h-80 object-cover" src="/models/me-main.png" />
     </div>
   </div>
 </template>
@@ -15,13 +15,13 @@
 
 @keyframes animate {
   0%{
-    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  }
-  50%{
     border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
   }
+  50%{
+    border-radius:  60% 40% 30% 70%/60% 30% 70% 40%;
+  }
   100%{
-    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
   }
 }
 </style>
