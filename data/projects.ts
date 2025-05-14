@@ -2,18 +2,18 @@ import type { Project } from '~/types'
 
 export const projects: Project[] = [
   {
-    img: '/projects/notium.png',
-    title: 'Notium is a cloud app for creating and storing notes, also using the built-in AI assistant',
-    stack: '#nuxt3, #typescript, #pinia, #tailwind, #shadcn, #vitest, #vueuse #yandex-gpt, #seo, #startup',
-    product: 'https://notium.vercel.app/',
-    github: 'https://github.com/mnenie/notium',
-  },
-  {
     img: '/projects/jenda.png',
     title: 'Jenda is a cloud-based program for efficient collaborative and individual project management',
     stack: '#vue3, #typescript, #pinia, #vueuse, #vitest, #i18n, #scss, #fsd, #ci/cd, #husky, #startup',
     product: 'https://jenda.vercel.app/',
     github: 'https://github.com/mnenie/jenda',
+  },
+  {
+    img: '/projects/notium.png',
+    title: 'Notium is a cloud app for creating and storing notes, also using the built-in AI assistant',
+    stack: '#nuxt3, #typescript, #pinia, #tailwind, #shadcn, #vitest, #vueuse #yandex-gpt, #seo, #startup',
+    product: 'https://notium.vercel.app/',
+    github: 'https://github.com/mnenie/notium',
   },
   {
     img: '/projects/xpiler.png',

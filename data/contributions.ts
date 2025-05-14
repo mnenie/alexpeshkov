@@ -22,7 +22,11 @@ export const contributions: Contribution[] = [
     site: 'https://nuxt.com/',
   },
   {
-    img: '/contributions/docus.png',
-    site: 'https://docus.dev/',
+    img: '/contributions/slidev.png',
+    site: 'https://sli.dev/',
+  },
+  {
+    img: '/contributions/shadcn-vue.png',
+    site: 'https://www.shadcn-vue.com/',
   },
 ]
